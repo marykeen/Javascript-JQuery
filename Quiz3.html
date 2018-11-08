@@ -1,0 +1,39 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.3.1.min.js"></script>
+
+    
+  
+</head>
+<body>
+
+ <!--With JavaScript and jQuery populate #list with the value of #textfield when #add is clicked. -->
+        
+   <input type="text" id="textfield" name=""/>
+    <button id="add">Add to Wishlist</button>
+    <div class="wishlist">
+        <h1>Wishlist</h1>
+        <ul id="list">
+        </ul>
+    </div>
+
+
+
+    <script> 
+          
+            $('#add').click(function(){
+                var name = $('#textfield').val();
+                $('#list').append(name + "\n");
+                console.log("\n");
+            });
+            
+            
+     </script>  
+
+</body>
+</html>
